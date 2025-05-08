@@ -41,6 +41,9 @@ public:
         }
     }
 
+node *previous = start;
+node *current = start;
+
 
 
 
