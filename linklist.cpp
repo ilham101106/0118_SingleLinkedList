@@ -81,6 +81,19 @@ previous->next = nodebaru;
         return true;
     }
 
+    void traverse(){
+        if (listemty()){
+            cout << "\nList Kosong\n";
+        }
+        else{
+            cout << "\nData didalam list adalah\n";
+            node *currentnode = start;
+            while (currentnode != NULL ){
+                cout << currentnode->noMhs << endl;
+                currentnode = currentnode->next;
+            }
+            cout << endl;
+        }
+    }
+};
 
-
-}
