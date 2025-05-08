@@ -56,5 +56,31 @@ while ((current != NULL) && (nim >= current->noMhs)){
 nodebaru->next = current;
 previous->next = nodebaru;
 
+    bool listempty(){
+    return (start == NULL);
+    }
+
+    bool Search(int nim, node **previous, node **current){
+        *previous = *current;
+        *current = (*current)->next;
+    }
+    
+    return (*current != NULL);
 }
+    bool delnode(int nim){
+        node *current, *previous;
+        if (!Search(nim, &previous, &current))
+        return false;
+
+        if (current == start)
+        start = start->next;
+        else
+        previous->next = current->next;
+
+        delete current;
+        return true;
+    }
+
+
+
 }
