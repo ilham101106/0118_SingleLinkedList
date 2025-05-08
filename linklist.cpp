@@ -113,7 +113,4 @@ int main()
         cout << "5. Keluar" << endl;
         cout << endl
              << "Masukkan pilihan (1-5): ";
-        cin >> ch;
-        switch (ch)
-        {
-  
+        
